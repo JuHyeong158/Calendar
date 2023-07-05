@@ -1,0 +1,50 @@
+﻿body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+button{
+    width:40px;
+}
+.calendar {
+    width: 700px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.yearmonth {
+    display: flex;
+}
+.year, .month {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size:25px;
+    font-weight:600;
+}
+.days {
+    display: flex;
+    margin-bottom: 10px;
+    color: #726a6a;
+}
+.day {
+    width: 100px;
+    text-align: center;
+}
+.dates {
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    border-top: 1px solid ;
+    border-right: 1px solid ;
+    
+}
+.date {
+    width: 98.8px;
+    text-align: right;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    
+}
