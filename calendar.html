@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
+    
     <div class="calendar">
         <div class="header">
-            <button class="prev"><</button>
+            <button class="prevYear" onclick="prevYear()"><<</button>
+            <button class="prevMonth" onclick="prevMonth()"><</button>
             <div class="yearmonth">
                 <div class="month"></div>
                 <div class="year"></div>
             </div>
-            <button class="next">></button>
+            <button class="nextMonth" onclick="nextMonth()">></button>
+            <button class="nextYear" onclick="nextYear()">>></button>
         </div>
 
         <div class="container">
@@ -30,6 +33,6 @@
             <div class="dates"></div>
         </div>
     </div>
-    <script src="JavaScript1.js"></script>
+    <script src="study2.js"></script>
 </body>
 </html>
