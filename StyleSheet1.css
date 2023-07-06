@@ -3,17 +3,51 @@
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+    background-color: #11245f;
 }
-button{
-    width:40px;
+button {
+    width: 60px;
+    background-color: #59d07d;
+    border: none;
+    color: white;
+    border-radius:5px;
+    font-size:20px;
+    font-weight:600;
+}
+.prevYear{
+    margin-right:30px;
+}
+.prevMonth{
+    margin-right:20px;
+}
+.nextYear {
+    margin-left: 30px;
+}
+.nextMonth {
+    margin-left: 20px;
+}
+button:hover {
+    background: #21825B;
 }
 .calendar {
-    width: 700px;
+    position:relative;
+    overflow:hidden;
+    display:inline-block;
+    background-color:white;
+    width: 630px;
+    height:640px;
+    padding-top:30px;
+    border-radius:15px;
+    
 }
 .header {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+}
+.prev, .next{
+    font-size:28px;
+    font-weight:600;
 }
 .yearmonth {
     display: flex;
@@ -21,30 +55,47 @@ button{
 .year, .month {
     margin-left: 20px;
     margin-right: 20px;
-    font-size:25px;
+    font-size:30px;
     font-weight:600;
 }
 .days {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: #726a6a;
 }
 .day {
-    width: 100px;
-    text-align: center;
+    width: 90px;
+    text-align:center;
 }
 .dates {
     display: flex;
     flex-flow: row wrap;
     height: 500px;
-    border-top: 1px solid ;
-    border-right: 1px solid ;
-    
 }
 .date {
-    width: 98.8px;
-    text-align: right;
-    border-bottom: 1px solid;
-    border-left: 1px solid;
-    
+    width: 90px;
+    text-align:center;
+    font-weight: 600;
+    font-size: 22px;
 }
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+    color: #D13E3E;
+}
+.day:nth-child(7n),
+.date:nth-child(7n) {
+    color: #396EE2;
+}
+.date:hover {
+    color: #218c74;
+    box-shadow: 0 0 1px 1px #4872f4 inset;
+    border-radius:5px;
+}
+.today {
+    box-shadow: 0 0 1px 4px #4872f4 inset;
+    border-radius:5px;
+}
+.date.today:hover {
+    box-shadow: 0 0 1px 4px #4872f4 inset;
+}
+
