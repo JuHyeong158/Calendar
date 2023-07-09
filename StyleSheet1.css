@@ -1,4 +1,5 @@
-﻿body {
+﻿
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,13 +33,12 @@ button:hover {
 .calendar {
     position:relative;
     overflow:hidden;
-    display:inline-block;
+    display:block;
     background-color:white;
     width: 630px;
-    height:640px;
+    height:660px;
     padding-top:30px;
-    border-radius:15px;
-    
+    border-radius:15px;   
 }
 .header {
     display: flex;
@@ -65,7 +65,9 @@ button:hover {
 }
 .day {
     width: 90px;
-    text-align:center;
+    text-align: center;
+    font-family: 'Noto Sans KR',sans-serif;
+    
 }
 .dates {
     display: flex;
@@ -86,16 +88,43 @@ button:hover {
 .date:nth-child(7n) {
     color: #396EE2;
 }
-.date:hover {
-    color: #218c74;
-    box-shadow: 0 0 1px 1px #4872f4 inset;
-    border-radius:5px;
-}
-.today {
+.date.today {
     box-shadow: 0 0 1px 4px #4872f4 inset;
     border-radius:5px;
 }
 .date.today:hover {
     box-shadow: 0 0 1px 4px #4872f4 inset;
 }
-
+.date.holiday {
+    color: #D13E3E;
+}
+.date:hover {
+    color: #218c74;
+    box-shadow: 0 0 1px 2px #CCCCCC inset;
+    border-radius: 5px;
+}
+.date.clicked {
+    box-shadow: 0 0 1px 2px #4872f4 inset;
+    border-radius: 5px;
+}
+.date.clicked.today {
+    box-shadow: 0 0 1px 4px #4872f4 inset;
+    border-radius: 5px;
+}
+button.korean{
+    width:140px;
+    text-align: center;
+    position:relative;
+    display:inline-block;
+    font-size:23px;
+}
+select{
+    width:100px;
+    height:26px;
+    font-size:18px;
+    margin-left:30px;
+    text-align:center;
+}
+select.m{
+    width:80px;
+}
